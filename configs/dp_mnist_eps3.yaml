@@ -1,0 +1,37 @@
+# =====================================================
+# Privacy-Preserving Federated Learning Configuration
+# MSc AI Dissertation
+# Muhammad Khalid
+# =====================================================
+
+experiment:
+  name: dp_mnist_eps3
+  random_seed: 42
+
+dataset:
+  name: mnist
+
+partition:
+  type: iid
+  num_clients: 5
+
+training:
+  num_rounds: 3
+  local_epochs: 1
+  batch_size: 64
+  learning_rate: 0.01
+  momentum: 0.9
+
+privacy:
+  enabled: true
+  epsilon: 3.0
+  delta: 1e-5
+  max_grad_norm: 1.0
+
+results:
+  save_csv: true
+  save_json: true
+  save_plots: true
+
+device:
+  auto: true

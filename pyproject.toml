@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "privacy-preserving-fl-framework"
+version = "0.1.0"
+description = "A modular and reproducible framework for privacy-preserving federated learning experiments"
+license = "MIT"
+dependencies = [
+    "numpy==1.26.4",
+    "torch==2.2.2",
+    "torchvision==0.17.2",
+    "opacus==1.4.0",
+    "flwr[simulation]==1.23.0",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "PyYAML",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "datasets",
+    "models",
+    "training",
+    "federated",
+    "evaluation",
+    "privacy",
+    "visualisation",
+    "utils",
+    "experiments",
+]

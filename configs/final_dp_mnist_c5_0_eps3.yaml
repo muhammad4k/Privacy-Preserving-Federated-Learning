@@ -1,0 +1,25 @@
+experiment:
+  name: final_dp_mnist_c5_0_eps3
+  random_seed: 42
+dataset:
+  name: mnist
+partition:
+  type: iid
+  num_clients: 5
+training:
+  num_rounds: 15
+  local_epochs: 1
+  batch_size: 64
+  learning_rate: 0.01
+  momentum: 0.9
+privacy:
+  enabled: true
+  epsilon: 3.0
+  delta: 1.0e-05
+  max_grad_norm: 5.0
+results:
+  save_csv: true
+  save_json: true
+  save_plots: true
+device:
+  auto: true

@@ -1,0 +1,55 @@
+# =====================================================
+# Privacy-Preserving Federated Learning Framework
+# MSc AI Dissertation
+# Muhammad Khalid
+# =====================================================
+
+experiment:
+
+  name: baseline_mnist_non_iid_15rounds
+
+  random_seed: 42
+
+dataset:
+
+  name: mnist
+
+partition:
+
+  type: non_iid
+
+  num_clients: 5
+
+training:
+
+  num_rounds: 15
+
+  local_epochs: 1
+
+  batch_size: 64
+
+  learning_rate: 0.01
+
+  momentum: 0.9
+
+privacy:
+
+  enabled: false
+
+  epsilon: 5.0
+
+  delta: 1e-5
+
+  max_grad_norm: 1.0
+
+results:
+
+  save_csv: true
+
+  save_json: true
+
+  save_plots: true
+
+device:
+
+  auto: true

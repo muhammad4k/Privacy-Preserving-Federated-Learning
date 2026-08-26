@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+data/
+results/raw/
+checkpoints/
+*.pt
+*.pth
+
+# Local/editor artifacts
+.idea/
+.vscode/
+.pytest_cache/
+.coverage
+
+# Dissertation/admin documents are submitted separately
+*.docx
+*.pdf
