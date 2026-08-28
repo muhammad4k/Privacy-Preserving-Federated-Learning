@@ -1,4 +1,4 @@
-# Privacy-Preserving Federated Learning Framework
+# A Modular and Reproducible Framework for Privacy-Preserving Federated Learning
 
 Source code and reproducibility materials for an MSc Artificial Intelligence dissertation investigating the privacy–utility trade-off in federated learning using differential privacy.
 
