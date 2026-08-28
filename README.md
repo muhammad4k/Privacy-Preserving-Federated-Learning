@@ -164,4 +164,6 @@ The test suite covers core components including aggregation, partitioning, priva
 
 ## Dissertation
 
-This repository accompanies the MSc Artificial Intelligence dissertation on privacy-preserving machine learning in distributed/federated learning systems. The dissertation contains the full methodology, experimental design, results, analysis, limitations, and discussion.
+This repository accompanies the MSc Artificial Intelligence dissertation
+“A Modular and Reproducible Framework for Privacy-Preserving Federated Learning.”
+It contains the implementation, experimental configurations, consolidated results,figures, tests, and reproducibility materials supporting the dissertation.
